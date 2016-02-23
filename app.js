@@ -2,18 +2,18 @@ var express = require('express');
 
 var app = express();
 
-var port = 3000;
+var port = 5000;
 
 app.get('/', function(req, res){
-    res.sendfile('html/index.html');
+    res.sendfile('dist/index.html');
 });
 
 app.get('/index.css', function(req, res){
-    res.sendfile('css/index.css');
+    res.sendfile('dist/index.css');
 });
 
 app.get('/index.js', function(req, res){
-    res.sendfile('js/index.js');
+    res.sendfile('dist/index.js');
 });
 
 app.listen(port, function(err){
